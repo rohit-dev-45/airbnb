@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
             },
         },
     },
+    experimental: {
+        serverActions: {
+            allowedOrigins: [
+                "localhost:3000",
+                "shiny-fortnight-97xwp5gww499cppwj-3000.app.github.dev",
+            ],
+        },
+    },
 };
 
 export default nextConfig;
